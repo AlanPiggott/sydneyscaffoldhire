@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, HardHat } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 export default function Header() {
   const scrollToSection = (id: string) => {
@@ -13,8 +13,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 glass-effect shadow-soft z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection('hero')}>
-            <HardHat className="w-10 h-10 text-primary-600" />
+          <div className="cursor-pointer" onClick={() => scrollToSection('hero')}>
             <div className="text-primary-600 font-bold text-2xl">Sydney Scaffold</div>
           </div>
           
