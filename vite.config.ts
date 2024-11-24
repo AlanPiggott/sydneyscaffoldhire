@@ -7,6 +7,7 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: true,
+    manifest: true,
     rollupOptions: {
       output: {
         manualChunks: undefined
@@ -17,9 +18,5 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     host: true
-  },
-  // Add proper MIME type handling
-  assetsInclude: ['**/*.svg'],
-  // Ensure proper base URL for production
-  base: '/'
+  }
 });
